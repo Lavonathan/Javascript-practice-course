@@ -7,12 +7,20 @@
 /////////////////////////////
 
 let js = "testing";
-if (js === "testing");
+//if (js === "testing") {alert(js)};
 
 js += " " + (41 + 8 + 23 - 10);
-alert(js);
+//alert(js);
 
 console.log(js);
 
 let getH1Test = document.getElementsByTagName("h1")[0];
-getH1Test.innerHTML = js;
+
+//  Storing variables
+let firstName = 'King Lavon ';
+let age = 25;
+
+getH1Test.innerHTML = firstName + age + '<br>';
+getH1Test.innerHTML += firstName + age+ '<br>';
+getH1Test.innerHTML += firstName + age+ '<br>';
+getH1Test.innerHTML += firstName + age+ '<br>';
