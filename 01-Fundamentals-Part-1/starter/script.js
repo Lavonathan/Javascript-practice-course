@@ -14,13 +14,21 @@ js += " " + (41 + 8 + 23 - 10);
 
 console.log(js);
 
-let getH1Test = document.getElementsByTagName("h1")[0];
+let getH1Test = document.getElementsByTagName("h1");
+let firstH1OnPage = getH1Test[0];
 
 //  Storing variables
 let firstName = 'King Lavon ';
 let age = 25;
 
-getH1Test.innerHTML = firstName + age + '<br>';
-getH1Test.innerHTML += firstName + age+ '<br>';
-getH1Test.innerHTML += firstName + age+ '<br>';
-getH1Test.innerHTML += firstName + age+ '<br>';
+firstH1OnPage.innerHTML = firstName + age + '<br>';
+firstH1OnPage.innerHTML += firstName + age+ '<br>';
+firstH1OnPage.innerHTML += firstName + age+ '<br>';
+firstH1OnPage.innerHTML += firstName + age+ '<br>';
+
+//  Constants, that you know will never change should be written in all uppercase.
+const PI = 3.14159;  
+
+//Can't reasign constants
+//PI = 5;
+firstH1OnPage.innerHTML += firstName + PI+ '<br>';
