@@ -42,8 +42,14 @@ console.log(canadaPopulation > finlandPopulation)
 const averageCountryPopulation = 33 * 1000000;
 console.log(canadaPopulation < averageCountryPopulation);
 
-let description = country + "is in " + continent + ", and its " + canadaPopulation + " million people speak " + language;
+let description = country + " is in " + continent + ", and its " + canadaPopulation + " million people speak " + language;
 
+//console.log(description);
+
+//////////////////////////////////////////////
+//  Lecture ....
+
+description = `${country} is in ${continent}, and its ${canadaPopulation} million people speak ${language}!`;
 console.log(description);
 
 //////////////////////////////////////////////
