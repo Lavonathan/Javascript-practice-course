@@ -47,10 +47,21 @@ let description = country + " is in " + continent + ", and its " + canadaPopulat
 //console.log(description);
 
 //////////////////////////////////////////////
-//  Lecture ....
+//  Lecture Strings and template Literals
 
 description = `${country} is in ${continent}, and its ${canadaPopulation} million people speak ${language}!`;
 console.log(description);
+
+//////////////////////////////////////////////
+//  Lecture Taking Decisions: if/else statements
+//1
+
+if(canadaPopulation > 33000000) {
+    console.log(`${country}'s population is above average.`);
+} else {
+    const amountBelowAverage = 33000000 - canadaPopulation;
+    console.log(`${country}'s population is ${amountBelowAverage} below average`);
+}
 
 //////////////////////////////////////////////
 //  Lecture ....
